@@ -19,7 +19,7 @@ const ThemeProvider = (props) => {
   const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
   return (
@@ -27,6 +27,5 @@ const ThemeProvider = (props) => {
       {props.children}
     </ThemeContext.Provider>
   );
-};
 
-export { ThemeProvider };
+export { ThemeProvider,ThemeContext };
