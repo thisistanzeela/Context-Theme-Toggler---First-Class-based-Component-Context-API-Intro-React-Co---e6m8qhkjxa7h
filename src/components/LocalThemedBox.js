@@ -13,6 +13,7 @@
 
 // export { LocalThemedBox }
 
+
 import React, { useContext, useState } from 'react';
 import { ThemeContext } from './ThemeProvider';
 
@@ -30,10 +31,7 @@ const LocalThemedBox = () => {
       className={`bg-${localTheme}`}
       id="local-themed-box"
     >
-      <p
-        className={`txt-${theme}`}
-        id="local-themed-text-container"
-      >
+      <p className={`txt-${theme}`} id="local-themed-text-container">
         Some Text
       </p>
       <button
@@ -48,6 +46,5 @@ const LocalThemedBox = () => {
     </div>
   );
 };
-
 
 export { LocalThemedBox };
