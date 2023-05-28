@@ -39,4 +39,3 @@ const Page = () => {
 }
 
 export { Page }
-export { Page };
